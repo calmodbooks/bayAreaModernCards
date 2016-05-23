@@ -8,24 +8,24 @@ input[type="button"]
   display: inline-block
   height: 38px
   padding: 0 30px
-  color: #555
+  color: $text
   text-align: center
+  font-family: 'Josefin Slab', serif
   font-size: 11px
   font-weight: 600
   line-height: 38px
   letter-spacing: .1rem
-  text-transform: uppercase
   text-decoration: none
   white-space: nowrap
-  background-color: transparent
+  background-color: $accent1
   border-radius: 4px
   border: 1px solid #bbb
   cursor: pointer
-  box-sizing: border-box
+  box-shadow: 0px 2px 4px $bg-lighter
 
   &:hover,
   &:active,
-  &:focus
-    color: #333
-    border-color: #888
+  &:focus,
+  &:touch
+    color: $accent2
     outline: 0

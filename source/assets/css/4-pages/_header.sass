@@ -1,0 +1,56 @@
+.header
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 100%
+  min-height: 768px
+  padding-top: 40px
+  background:
+    image: url('/assets/img/header.jpg')
+    repeat: no-repeat
+    size: cover
+    position: center center
+  overflow: hidden
+  h1
+    margin: 0 40px
+    letter-spacing: 15px
+    text-transform: uppercase
+    line-height: 1.5
+    font-size: 80px
+ul
+  margin: 0px
+.nav-bar
+  width: 100%
+  margin: 0px
+.nav
+  padding: 20px
+  list-style: none
+  background-color: rgba($accent1, .64)
+  text-align: right
+  li
+    display: inline
+    margin: 0px 20px
+    a
+      padding-bottom: 5px
+      color: $text
+      border-bottom: 1px solid transparent
+      &:hover
+        color: $accent2
+        line-height: 28px
+        border-bottom: 1px solid $accent2
+        cursor: pointer
+
+@media(max-width:700px)
+  .header
+    min-height: 400px
+    h1
+      font-size: 40px
+      margin: 0 20px
+  .nav
+    padding: 10px
+    text-align: center
+    li
+      margin: 0 15px
+      a
+        font-size: 16px
+
