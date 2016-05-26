@@ -1,0 +1,57 @@
+section.quote
+  background-color: $text
+  padding: 0
+  margin: 0
+  .quote-bg
+    display: flex
+    justify-content: flex-end
+    flex-direction: column
+    width: 100%
+    background:
+      image: url('/assets/img/quoteBg.png')
+      repeat: no-repeat
+      size: cover
+      position: top center
+    height: 900px
+    margin: 0
+    padding: 0
+  .quote-box
+    background-color: rgba($bg, .7)
+    text-align: center
+    padding: 30px 50px
+    font-weight: 600
+    font-size: 1.6em
+    font-style: italic
+    p
+      padding: 0
+      margin: 0
+
+@media(max-width:900px)
+  section.quote
+    .quote-bg
+      max-height: 600px
+      font-size: .9em
+
+@media(max-width:700px)
+  section.quote
+    .quote-bg
+      max-height: 500px
+      .quote-box
+        padding: 20px 40px
+        font-size: .7em
+
+@media(max-width:500px)
+  section.quote
+    .quote-bg
+      max-height: 300px
+      .quote-box
+        padding: 20px
+        font-size: .5em
+
+@media(max-width:400px)
+  section.quote
+    .quote-bg
+      max-height: 240px
+      .quote-box
+        padding: 10px
+

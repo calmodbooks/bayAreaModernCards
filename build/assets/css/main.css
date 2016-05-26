@@ -312,7 +312,7 @@ input[type="button"] {
   background-position: center center;
   overflow: hidden; }
   .header h1 {
-    margin: 0 40px;
+    margin: 0 50px;
     letter-spacing: 15px;
     text-transform: uppercase;
     line-height: 1.5;
@@ -326,13 +326,15 @@ ul {
   margin: 0px; }
 
 .nav {
-  padding: 20px;
+  padding: 20px 50px;
   list-style: none;
   background-color: rgba(83, 55, 95, 0.64);
   text-align: right; }
   .nav li {
     display: inline;
     margin: 0px 20px; }
+    .nav li:last-child {
+      margin-right: 0; }
     .nav li a {
       padding-bottom: 5px;
       color: #FFFFFF;
@@ -360,16 +362,17 @@ ul {
 section.buyNow {
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   background-color: #FFFFFF;
   overflow: hidden;
-  padding: 40px 0; }
+  padding-top: 40px; }
   section.buyNow .col-1 {
     -ms-flex-positive: 1;
         flex-grow: 1;
     text-align: center;
-    padding: 0 40px;
-    max-width: 550px; }
+    padding: 0 50px;
+    max-width: 50%; }
     section.buyNow .col-1 img {
       max-width: 100%;
       height: auto;
@@ -382,11 +385,10 @@ section.buyNow {
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    padding: 20px 40px;
+    padding: 20px 50px 0 50px;
     text-align: center; }
     section.buyNow .col-2 .description {
       text-align: left;
-      max-width: 500px;
       color: #272727;
       font-size: 1.3em; }
     section.buyNow .col-2 button {
@@ -399,6 +401,74 @@ section.buyNow {
 
 @media (max-width: 700px) {
   section.buyNow {
-    display: block; }
-    section.buyNow .col-2 .description {
-      font-size: .9em; } }
+    display: block;
+    text-align: center; }
+    section.buyNow .col-1 {
+      max-width: 100%; }
+    section.buyNow .col-2 {
+      padding: 0 50px; }
+      section.buyNow .col-2 .description {
+        font-size: .9em; } }
+
+@media (max-width: 500px) {
+  section.buyNow {
+    padding-top: 10px; }
+    section.buyNow .col-1 {
+      padding: 0 10px; }
+    section.buyNow .col-2 {
+      padding: 0 20px; } }
+
+section.quote {
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0; }
+  section.quote .quote-bg {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+    background-image: url("/assets/img/quoteBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 900px;
+    margin: 0;
+    padding: 0; }
+  section.quote .quote-box {
+    background-color: rgba(39, 39, 39, 0.7);
+    text-align: center;
+    padding: 30px 50px;
+    font-weight: 600;
+    font-size: 1.6em;
+    font-style: italic; }
+    section.quote .quote-box p {
+      padding: 0;
+      margin: 0; }
+
+@media (max-width: 900px) {
+  section.quote .quote-bg {
+    max-height: 600px;
+    font-size: .9em; } }
+
+@media (max-width: 700px) {
+  section.quote .quote-bg {
+    max-height: 500px; }
+    section.quote .quote-bg .quote-box {
+      padding: 20px 40px;
+      font-size: .7em; } }
+
+@media (max-width: 500px) {
+  section.quote .quote-bg {
+    max-height: 300px; }
+    section.quote .quote-bg .quote-box {
+      padding: 20px;
+      font-size: .5em; } }
+
+@media (max-width: 400px) {
+  section.quote .quote-bg {
+    max-height: 240px; }
+    section.quote .quote-bg .quote-box {
+      padding: 10px; } }

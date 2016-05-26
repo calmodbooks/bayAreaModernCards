@@ -1,15 +1,15 @@
 section.buyNow
   display: flex
-  text-align: center
+  justify-content: center
   background-color: $text
   overflow: hidden
-  padding: 40px 0
+  padding-top: 40px
 
   .col-1
     flex-grow: 1
     text-align: center
-    padding: 0 40px
-    max-width: 550px
+    padding: 0 50px
+    max-width: 50%
     img
       max-width: 100%
       height: auto
@@ -19,12 +19,10 @@ section.buyNow
     flex-grow: 1
     display: flex
     align-items: center
-    padding: 20px 40px 
+    padding: 20px 50px 0 50px
     text-align: center
-
     .description
       text-align: left
-      max-width: 500px
       color: $bg
       font-size: 1.3em
     button
@@ -40,6 +38,19 @@ section.buyNow
 @media(max-width:700px)
   section.buyNow
     display: block
+    text-align: center
+    .col-1
+      max-width: 100%
     .col-2
+      padding: 0 50px
       .description
         font-size: .9em
+
+@media(max-width:500px)
+  section.buyNow
+    padding-top: 10px
+    .col-1
+      padding: 0 10px
+    .col-2
+      padding: 0 20px
+
