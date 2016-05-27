@@ -19,25 +19,56 @@ section
       width: 33%
       max-height: 50%
       // margin: 10px
+      position: relative
       
-    .card-hor img
-      width: 100%
+    .card-hor 
+      img
+        width: 100%
 
-    .card-vert img
-      width: 80%
+    .card-vert 
+      img
+        width: 80%
+      .caption
+        padding: 20px 55px
 
     .caption
       position: absolute
-      background-color: pink
+      background-color: rgba($bg, .9)
+      height: 100%
+      padding: 20px 10px
+      text-align: left
+      vertical-align: middle
+      overflo: hidden
+      span
+        font-weight: bold
+
 
 
 @media(max-width:1142px)
   section .cards-wrap
     max-height: 700px
 
+@media(max-width:980px)
+  section .cards-wrap
+    .card-vert
+      .caption
+        padding: 20px 40px
+    .caption
+        font-size: 13px
+
 @media(max-width:903px)
   section .cards-wrap
     max-height: 600px
+    .card-vert
+      .caption
+        padding: 10px 30px
+    .caption
+        font-size: 12px
+        padding: 10px
+@media(max-width:844px)
+  section .cards-wrap
+    .caption
+      font-size: 11px
 
 @media(max-width:785px)
   section 
@@ -45,13 +76,17 @@ section
       padding-bottom: 40px
     .cards-wrap
       max-height: 500px
+// @media(max-width:755px)
+//   section .cards-wrap
+//     .caption
+//       font-size: 10px
 
-@media(max-width:667px)
-  section .cards-wrap
-    margin: 40px
-    max-height: 400px
+// @media(max-width:667px)
+//   section .cards-wrap
+//     margin: 40px
+//     max-height: 400px
 
-@media(max-width:527px)
+@media(max-width:755px)
   section 
     h2
       padding-bottom: 10px
@@ -81,6 +116,8 @@ section
         order: 5
       #card6
         order: 66
+      .caption
+        padding: 30px
 
 
 
