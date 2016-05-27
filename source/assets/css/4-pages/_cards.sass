@@ -1,0 +1,83 @@
+section 
+  text-align: center
+  h2
+    padding-bottom: 50px
+  .cards-wrap
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    margin: 50px
+    max-height: 900px
+    overflow: hidden
+
+
+    .card-hor,
+    .card-vert
+      text-align: center
+      width: 33%
+      max-height: 50%
+      // margin: 10px
+      
+    .card-hor img
+      width: 100%
+
+    .card-vert img
+      width: 80%
+
+
+@media(max-width:1142px)
+  section .cards-wrap
+    max-height: 700px
+
+@media(max-width:903px)
+  section .cards-wrap
+    max-height: 600px
+
+@media(max-width:785px)
+  section 
+    h2
+      padding-bottom: 40px
+    .cards-wrap
+      max-height: 500px
+
+@media(max-width:667px)
+  section .cards-wrap
+    margin: 40px
+    max-height: 400px
+
+@media(max-width:527px)
+  section 
+    h2
+      padding-bottom: 10px
+      font-size: 2.5em
+    .cards-wrap
+      flex-direction: row
+      justify-content: space-around
+      margin: 20px
+      overflow: scroll
+      max-height: 400px
+      text-align: center
+      .card-hor,
+      .card-vert
+        width: 100%
+        margin: 10px
+        img
+          width: 90%
+      #card1
+        order: 1
+      #card3
+        order: 2
+      #card5
+        order: 3
+      #card2
+        order: 4
+      #card4
+        order: 5
+      #card6
+        order: 66
+
+
+
+    
