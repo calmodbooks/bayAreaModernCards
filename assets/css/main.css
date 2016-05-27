@@ -388,9 +388,10 @@ section.buyNow {
     padding: 20px 50px 0 50px;
     text-align: center; }
     section.buyNow .col-2 .description {
-      text-align: left;
-      color: #272727;
-      font-size: 1.3em; }
+      text-align: left; }
+      section.buyNow .col-2 .description #text {
+        color: #272727;
+        font-size: 1.3em; }
     section.buyNow .col-2 button {
       display: block;
       margin: 40px auto 0px auto; }
@@ -401,14 +402,26 @@ section.buyNow {
 
 @media (max-width: 700px) {
   section.buyNow {
-    display: block;
+    -ms-flex-direction: column;
+        flex-direction: column;
     text-align: center; }
     section.buyNow .col-1 {
       max-width: 100%; }
     section.buyNow .col-2 {
       padding: 0 50px; }
       section.buyNow .col-2 .description {
-        font-size: .9em; } }
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        section.buyNow .col-2 .description #text {
+          font-size: .9em;
+          -ms-flex-order: 2;
+              order: 2; }
+        section.buyNow .col-2 .description button {
+          -ms-flex-order: 1;
+              order: 1;
+          margin: 0px auto 40px auto; } }
 
 @media (max-width: 500px) {
   section.buyNow {
@@ -451,24 +464,110 @@ section.quote {
 @media (max-width: 900px) {
   section.quote .quote-bg {
     max-height: 600px;
-    font-size: .9em; } }
+    font-size: 1em; } }
 
 @media (max-width: 700px) {
   section.quote .quote-bg {
     max-height: 500px; }
     section.quote .quote-bg .quote-box {
       padding: 20px 40px;
-      font-size: .7em; } }
+      font-size: .9em; } }
 
 @media (max-width: 500px) {
   section.quote .quote-bg {
     max-height: 300px; }
     section.quote .quote-bg .quote-box {
       padding: 20px;
-      font-size: .5em; } }
+      font-size: .7em; } }
 
 @media (max-width: 400px) {
   section.quote .quote-bg {
     max-height: 240px; }
     section.quote .quote-bg .quote-box {
       padding: 10px; } }
+
+section {
+  text-align: center; }
+  section h2 {
+    padding-bottom: 50px; }
+  section .cards-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin: 50px;
+    max-height: 900px;
+    overflow: hidden; }
+    section .cards-wrap .card-hor,
+    section .cards-wrap .card-vert {
+      text-align: center;
+      width: 33%;
+      max-height: 50%; }
+    section .cards-wrap .card-hor img {
+      width: 100%; }
+    section .cards-wrap .card-vert img {
+      width: 80%; }
+
+@media (max-width: 1142px) {
+  section .cards-wrap {
+    max-height: 700px; } }
+
+@media (max-width: 903px) {
+  section .cards-wrap {
+    max-height: 600px; } }
+
+@media (max-width: 785px) {
+  section h2 {
+    padding-bottom: 40px; }
+  section .cards-wrap {
+    max-height: 500px; } }
+
+@media (max-width: 667px) {
+  section .cards-wrap {
+    margin: 40px;
+    max-height: 400px; } }
+
+@media (max-width: 527px) {
+  section h2 {
+    padding-bottom: 10px;
+    font-size: 2.5em; }
+  section .cards-wrap {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 20px;
+    overflow: scroll;
+    max-height: 400px;
+    text-align: center; }
+    section .cards-wrap .card-hor,
+    section .cards-wrap .card-vert {
+      width: 100%;
+      margin: 10px; }
+      section .cards-wrap .card-hor img,
+      section .cards-wrap .card-vert img {
+        width: 90%; }
+    section .cards-wrap #card1 {
+      -ms-flex-order: 1;
+          order: 1; }
+    section .cards-wrap #card3 {
+      -ms-flex-order: 2;
+          order: 2; }
+    section .cards-wrap #card5 {
+      -ms-flex-order: 3;
+          order: 3; }
+    section .cards-wrap #card2 {
+      -ms-flex-order: 4;
+          order: 4; }
+    section .cards-wrap #card4 {
+      -ms-flex-order: 5;
+          order: 5; }
+    section .cards-wrap #card6 {
+      -ms-flex-order: 66;
+          order: 66; } }
