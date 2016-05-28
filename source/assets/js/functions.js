@@ -17,7 +17,7 @@ $(window).on('scroll', function(){
   function captionPop(){
     console.log('captionPop fired');
     var wScroll = $(window).scrollTop();
-    if($('section.exploreDeck').offset().top - $(window).height()/2 < wScroll){
+    if($('section.exploreDeck').offset().top - $(window).height()/3 < wScroll){
       console.log('adding class');
       $('#active').addClass('show');
     }

@@ -400,6 +400,8 @@ section.buyNow {
     section.buyNow .col-2 button {
       display: block;
       margin: 40px auto 0px auto; }
+      section.buyNow .col-2 button:hover {
+        background-color: #60953D; }
 
 @media (max-width: 800px) {
   section.buyNow .col-2 .description {
