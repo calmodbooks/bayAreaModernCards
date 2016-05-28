@@ -399,7 +399,8 @@ section.buyNow {
         font-size: 1.3em; }
     section.buyNow .col-2 button {
       display: block;
-      margin: 40px auto 0px auto; }
+      margin: 40px auto 0px auto;
+      font-size: 18px; }
       section.buyNow .col-2 button:hover {
         background-color: #60953D; }
 
@@ -422,13 +423,14 @@ section.buyNow {
         -ms-flex-direction: column;
             flex-direction: column; }
         section.buyNow .col-2 .description #text {
-          font-size: .9em;
+          font-size: 1em;
           -ms-flex-order: 2;
               order: 2; }
         section.buyNow .col-2 .description button {
           -ms-flex-order: 1;
               order: 1;
-          margin: 0px auto 40px auto; } }
+          margin: 0px auto 40px auto;
+          font-size: 1; } }
 
 @media (max-width: 500px) {
   section.buyNow {
@@ -692,16 +694,18 @@ footer {
     list-style: none; }
     footer ul li {
       display: inline-block;
-      padding: 0 10px; }
-      footer ul li:last-child {
-        padding-right: 0px; }
+      padding: 0 10px;
+      cursor: pointer; }
       footer ul li a {
-        font-size: 20px; }
+        font-size: 20px;
+        color: #FFFFFF; }
+    footer ul li:last-child {
+      padding-right: 0px; }
 
 @media (max-width: 400px) {
   footer {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
     -ms-flex-pack: center;
         justify-content: center; }
     footer ul {

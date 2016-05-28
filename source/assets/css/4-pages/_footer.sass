@@ -14,15 +14,18 @@ footer
     li
       display: inline-block
       padding: 0 10px
-      &:last-child
-        padding-right: 0px
-
+      cursor: pointer
       a
         font-size: 20px
+        color: $text
+    li:last-child
+      padding-right: 0px
+
+
 
 @media(max-width:400px)
   footer
-    flex-direction: column
+    flex-direction: column-reverse
     justify-content: center
     ul
       padding: 0
