@@ -20,6 +20,10 @@ section
       max-height: 50%
       // margin: 10px
       position: relative
+      overflow: hidden
+      &:hover .caption
+        opacity: 1
+        transform: translate(0%, 0%) scale(1.0)
       
     .card-hor 
       img
@@ -38,9 +42,16 @@ section
       padding: 20px 10px
       text-align: left
       vertical-align: middle
-      overflo: hidden
+      overflow: hidden
+      transform: translate(100%, 0%) scale(0.5)
+      transition: all 200ms ease-in-out
+      opacity: 0
       span
         font-weight: bold
+    .caption.show
+      opacity: 1
+      transform: translate(0%, 0%) scale(1.0)
+
 
 
 

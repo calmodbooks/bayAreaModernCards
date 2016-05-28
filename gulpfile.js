@@ -95,7 +95,7 @@ gulp.task('jade', function(){
  gulp.task('watch', function () {
      gulp.watch('source/assets/css/**', ['sass']);
      gulp.watch('source/jadeFiles/**/*.jade', ['jade']);
-     // gulp.watch('source/assets/js/**/*.js', ['jsLint', 'javascript']);
+     gulp.watch('source/assets/js/**/*.js', ['javascript']);
      gulp.watch('source/assets/img/**', ['img']);
      // gulp.watch('build/**/*.*').on('change', browserSync.reload);
      gulp.watch('build/*.html').on('change', browserSync.reload);
