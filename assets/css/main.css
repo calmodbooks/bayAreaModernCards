@@ -514,7 +514,13 @@ section {
       text-align: center;
       width: 33%;
       max-height: 50%;
-      position: relative; }
+      position: relative;
+      overflow: hidden; }
+      section .cards-wrap .card-hor:hover .caption,
+      section .cards-wrap .card-vert:hover .caption {
+        opacity: 1;
+        -webkit-transform: translate(0%, 0%) scale(1);
+                transform: translate(0%, 0%) scale(1); }
     section .cards-wrap .card-hor img {
       width: 100%; }
     section .cards-wrap .card-vert img {
@@ -528,9 +534,17 @@ section {
       padding: 20px 10px;
       text-align: left;
       vertical-align: middle;
-      overflo: hidden; }
+      overflow: hidden;
+      -webkit-transform: translate(100%, 0%) scale(0.5);
+              transform: translate(100%, 0%) scale(0.5);
+      transition: all 200ms ease-in-out;
+      opacity: 0; }
       section .cards-wrap .caption span {
         font-weight: bold; }
+    section .cards-wrap .caption.show {
+      opacity: 1;
+      -webkit-transform: translate(0%, 0%) scale(1);
+              transform: translate(0%, 0%) scale(1); }
 
 @media (max-width: 1142px) {
   section .cards-wrap {
