@@ -594,11 +594,12 @@ section {
     text-align: center; }
     section .cards-wrap .card-hor,
     section .cards-wrap .card-vert {
-      width: 100%;
+      width: 70%;
       margin: 10px; }
-      section .cards-wrap .card-hor img,
-      section .cards-wrap .card-vert img {
-        width: 90%; }
+    section .cards-wrap .caption {
+      font-size: 14px; }
+    section .cards-wrap .card-vert .caption {
+      padding: 20px 70px; }
     section .cards-wrap #card1 {
       -ms-flex-order: 1;
           order: 1; }
@@ -619,6 +620,25 @@ section {
           order: 66; }
     section .cards-wrap .caption {
       padding: 30px; } }
+
+@media (max-width: 500px) {
+  section .cards-wrap .card-hor,
+  section .cards-wrap .card-vert {
+    width: 80%; }
+  section .cards-wrap .card-vert .caption {
+    padding: 20px 40px; }
+  section .cards-wrap .caption {
+    font-size: 12px; }
+  section .cards-wrap .card-hor .caption {
+    padding: 10px; } }
+
+@media (max-width: 400px) {
+  section .cards-wrap .caption {
+    font-size: 11px; }
+  section .cards-wrap .card-hor .caption {
+    padding: 5px; }
+  section .cards-wrap .card-vert .caption {
+    padding: 10px 30px; } }
 
 section.stores {
   background-color: #FFFFFF;

@@ -6,7 +6,7 @@ $(window).on('scroll', function(){
   captionPop();
 });
 //removes overlay, so standard animation cna kick in
-  $('.standard, #active').on('mouseenter', function(){
+  $('.standard, #active').on('mouseenter touch', function(){
     $('#active').removeClass('show');
   });
   
