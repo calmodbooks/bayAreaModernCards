@@ -111,10 +111,13 @@ section
       text-align: center
       .card-hor,
       .card-vert
-        width: 100%
+        width: 70%
         margin: 10px
-        img
-          width: 90%
+      .caption
+        font-size: 14px
+      .card-vert
+        .caption
+          padding: 20px 70px
       #card1
         order: 1
       #card3
@@ -130,6 +133,30 @@ section
       .caption
         padding: 30px
 
+@media(max-width:500px)
+  section
+    .cards-wrap
+      .card-hor,
+      .card-vert
+        width: 80%
+      .card-vert
+        .caption
+          padding: 20px 40px
+      .caption
+        font-size: 12px
+      .card-hor
+        .caption
+          padding: 10px
 
-
+@media(max-width:400px)
+  section
+    .cards-wrap
+      .caption
+        font-size: 11px
+      .card-hor
+        .caption
+          padding: 5px
+      .card-vert
+        .caption
+          padding: 10px 30px
     
