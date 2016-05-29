@@ -311,7 +311,7 @@ input[type="button"] {
   width: 100%;
   min-height: 768px;
   padding-top: 40px;
-  background-image: url("./assets/img/header.jpg");
+  background-image: url("/assets/img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
