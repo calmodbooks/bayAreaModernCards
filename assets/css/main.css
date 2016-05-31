@@ -311,11 +311,22 @@ input[type="button"] {
   width: 100%;
   min-height: 768px;
   padding-top: 40px;
-  background-image: url("http://calmodbooks.github.io/bayAreaModernCards/assets/img/header.JPG");
+  background-image: url("/assets/img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+  .header p.small.photo-credit {
+    position: absolute;
+    right: -200px;
+    top: 230px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: top-right;
+            transform-origin: top-right; }
   .header h1 {
     margin: 0 50px;
     letter-spacing: 15px;
@@ -353,6 +364,10 @@ ul {
 @media (max-width: 700px) {
   .header {
     min-height: 400px; }
+    .header p.small.photo-credit {
+      font-size: 9px;
+      right: -150px;
+      top: 170px; }
     .header h1 {
       font-size: 40px;
       margin: 0 20px; }
@@ -363,6 +378,12 @@ ul {
       margin: 0 15px; }
       .nav li a {
         font-size: 16px; } }
+
+@media (max-width: 500px) {
+  .header p.small.photo-credit {
+    font-size: 8px;
+    right: -140px;
+    top: 160px; } }
 
 section.buyNow {
   display: -ms-flexbox;
@@ -443,7 +464,16 @@ section.buyNow {
 section.quote {
   background-color: #ffffff;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
+  section.quote p.small.photo-credit {
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    bottom: 100px;
+    right: -100px; }
   section.quote .quote-bg {
     display: -ms-flexbox;
     display: flex;
@@ -452,7 +482,7 @@ section.quote {
     -ms-flex-direction: column;
         flex-direction: column;
     width: 100%;
-    background-image: url("http://calmodbooks.github.io/bayAreaModernCards/assets/img/quoteBg.png");
+    background-image: url("/assets/img/quoteBg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -475,7 +505,15 @@ section.quote {
     max-height: 600px;
     font-size: 1em; } }
 
+@media (max-width: 800px) {
+  section.quote p.small.photo-credit {
+    bottom: 150px; } }
+
 @media (max-width: 700px) {
+  section.quote p.small.photo-credit {
+    bottom: 50px;
+    right: -75px;
+    font-size: 9px; }
   section.quote .quote-bg {
     max-height: 500px; }
     section.quote .quote-bg .quote-box {
@@ -490,6 +528,8 @@ section.quote {
       font-size: .7em; } }
 
 @media (max-width: 400px) {
+  section.quote p.small.photo-credit {
+    bottom: 30px; }
   section.quote .quote-bg {
     max-height: 240px; }
     section.quote .quote-bg .quote-box {
@@ -525,6 +565,10 @@ section {
         opacity: 1;
         -webkit-transform: translate(0%, 0%) scale(1);
                 transform: translate(0%, 0%) scale(1); }
+      section .cards-wrap .card-hor p.small.photo-credit,
+      section .cards-wrap .card-vert p.small.photo-credit {
+        padding: 10px;
+        margin: 0; }
     section .cards-wrap .card-hor img {
       width: 100%; }
     section .cards-wrap .card-vert img {
@@ -552,7 +596,7 @@ section {
 
 @media (max-width: 1142px) {
   section .cards-wrap {
-    max-height: 700px; } }
+    max-height: 750px; } }
 
 @media (max-width: 980px) {
   section .cards-wrap .card-vert .caption {
@@ -562,7 +606,7 @@ section {
 
 @media (max-width: 903px) {
   section .cards-wrap {
-    max-height: 600px; }
+    max-height: 650px; }
     section .cards-wrap .card-vert .caption {
       padding: 10px 30px; }
     section .cards-wrap .caption {
@@ -577,7 +621,7 @@ section {
   section h2 {
     padding-bottom: 40px; }
   section .cards-wrap {
-    max-height: 500px; } }
+    max-height: 600px; } }
 
 @media (max-width: 755px) {
   section h2 {
@@ -625,6 +669,9 @@ section {
   section .cards-wrap .card-hor,
   section .cards-wrap .card-vert {
     width: 80%; }
+    section .cards-wrap .card-hor p.small.photo-credit,
+    section .cards-wrap .card-vert p.small.photo-credit {
+      font-size: 9px; }
   section .cards-wrap .card-vert .caption {
     padding: 20px 40px; }
   section .cards-wrap .caption {
@@ -663,20 +710,34 @@ section.stores {
     section.stores .box .col-2 {
       -ms-flex-positive: 2;
           flex-grow: 2;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
       -ms-flex-line-pack: center;
           align-content: center;
       max-height: 500px;
       margin: 0px;
       padding: 40px 20px; }
-      section.stores .box .col-2 img {
-        max-width: 200px;
-        padding: 10px; }
+      section.stores .box .col-2 .thumbs-wrap {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        max-height: 400px;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        max-width: 350px;
+        margin: auto; }
+        section.stores .box .col-2 .thumbs-wrap img {
+          max-width: 180px;
+          padding: 10px; }
+      section.stores .box .col-2 p.small.photo-credit {
+        margin: 0 auto;
+        padding: 0 30px 0 35px;
+        dislpay: block;
+        max-width: 400px;
+        color: #434141; }
 
 @media (max-width: 700px) {
   section.stores .box {
@@ -689,12 +750,18 @@ section.stores {
     section.stores .box .col-2 {
       padding: 10px 20px; } }
 
-@media (max-width: 400px) {
-  section.stores .box .col-2 {
-    max-height: 300px; }
-    section.stores .box .col-2 img {
-      max-width: 150px;
-      padding: 5px; } }
+@media (max-width: 460px) {
+  section.stores .box .col-2 .thumbs-wrap {
+    max-height: 200px;
+    max-width: 300px;
+    text-align: center; }
+    section.stores .box .col-2 .thumbs-wrap img {
+      max-width: 120px;
+      padding: 5px; }
+  section.stores .box .col-2 p.small.photo-credit {
+    padding: 5px 0 10px 5px;
+    max-width: 300px;
+    font-size: 9px; } }
 
 footer {
   padding: 20px;
