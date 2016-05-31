@@ -2,13 +2,21 @@ section.quote
   background-color: $text
   padding: 0
   margin: 0
+  position: relative
+  p.small.photo-credit
+    position: absolute
+    transform: rotate(-90deg)
+    transform-origin: top left
+    bottom: 100px
+    right: -100px
   .quote-bg
     display: flex
     justify-content: flex-end
     flex-direction: column
     width: 100%
     background:
-      image: url('http://calmodbooks.github.io/bayAreaModernCards/assets/img/quoteBg.png')
+      // image: url('http://calmodbooks.github.io/bayAreaModernCards/assets/img/quoteBg.png')
+      image: url('/assets/img/quoteBg.png')
       repeat: no-repeat
       size: cover
       position: top center
@@ -32,8 +40,18 @@ section.quote
       max-height: 600px
       font-size: 1em
 
+@media(max-width:800px)
+  section.quote
+    p.small.photo-credit
+      bottom: 150px
+
 @media(max-width:700px)
   section.quote
+    p.small.photo-credit
+      bottom: 50px
+      right: -75px
+      font-size: 9px
+
     .quote-bg
       max-height: 500px
       .quote-box
@@ -50,6 +68,8 @@ section.quote
 
 @media(max-width:400px)
   section.quote
+    p.small.photo-credit
+      bottom: 30px
     .quote-bg
       max-height: 240px
       .quote-box

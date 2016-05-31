@@ -18,16 +18,36 @@ section.stores
 
     .col-2
       flex-grow: 2
-      display: flex
-      flex-direction: column
-      flex-wrap: wrap
+      // display: flex
+      // flex-direction: column
+      // flex-wrap: wrap
       align-content: center
       max-height: 500px
       margin: 0px
       padding: 40px 20px
-      img
-        max-width: 200px
-        padding: 10px
+      // .thumb-box
+        // max-width: 200px
+        // padding: 10px
+      .thumbs-wrap
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        max-height: 400px
+        justify-content: center
+        align-items: center
+        max-width: 350px
+        margin: auto
+        img
+          max-width: 180px
+          padding: 10px
+      p.small.photo-credit
+        margin: 0 auto
+        padding: 0 30px 0 35px
+        dislpay: block
+        max-width: 400px
+        color: $bg
+        
+
 
 @media(max-width:700px)
   section.stores
@@ -41,13 +61,21 @@ section.stores
       .col-2
         padding: 10px 20px
 
-@media(max-width:400px)
+@media(max-width:460px)
   section.stores
     .box
       .col-2
-        max-height: 300px
-        img
-          max-width: 150px
-          padding: 5px
+
+        .thumbs-wrap
+          max-height: 200px
+          max-width: 300px
+          text-align: center
+          img
+            max-width: 120px
+            padding: 5px
+        p.small.photo-credit
+          padding: 5px 0 10px 5px
+          max-width: 300px
+          font-size: 9px
 
 

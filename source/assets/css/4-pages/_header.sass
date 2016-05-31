@@ -6,11 +6,21 @@
   min-height: 768px
   padding-top: 40px
   background:
-    image: url('http://calmodbooks.github.io/bayAreaModernCards/assets/img/header.JPG')
+    // image: url('http://calmodbooks.github.io/bayAreaModernCards/assets/img/header.JPG')
+    image: url('/assets/img/header.jpg')
     repeat: no-repeat
     size: cover
     position: center center
   overflow: hidden
+  position: relative
+  p.small.photo-credit
+    position: absolute
+    right: -200px
+    top: 230px
+    text-align: right
+    color: rgba($text, .7)
+    transform: rotate(-90deg)
+    transform-origin: top-right
   h1
     margin: 0 50px
     letter-spacing: 15px
@@ -42,9 +52,14 @@ ul
         border-bottom: 1px solid $accent2
         cursor: pointer
 
+
 @media(max-width:700px)
   .header
     min-height: 400px
+    p.small.photo-credit
+      font-size: 9px
+      right: -150px
+      top: 170px
     h1
       font-size: 40px
       margin: 0 20px
@@ -56,3 +71,9 @@ ul
       a
         font-size: 16px
 
+@media(max-width:500px)
+  .header
+    p.small.photo-credit
+      font-size: 8px
+      right: -140px
+      top: 160px

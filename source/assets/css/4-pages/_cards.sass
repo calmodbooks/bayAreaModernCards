@@ -24,7 +24,9 @@ section
       &:hover .caption
         opacity: 1
         transform: translate(0%, 0%) scale(1.0)
-      
+      p.small.photo-credit
+        padding: 10px
+        margin: 0
     .card-hor 
       img
         width: 100%
@@ -57,7 +59,7 @@ section
 
 @media(max-width:1142px)
   section .cards-wrap
-    max-height: 700px
+    max-height: 750px
 
 @media(max-width:980px)
   section .cards-wrap
@@ -69,7 +71,7 @@ section
 
 @media(max-width:903px)
   section .cards-wrap
-    max-height: 600px
+    max-height: 650px
     .card-vert
       .caption
         padding: 10px 30px
@@ -86,7 +88,7 @@ section
     h2
       padding-bottom: 40px
     .cards-wrap
-      max-height: 500px
+      max-height: 600px
 // @media(max-width:755px)
 //   section .cards-wrap
 //     .caption
@@ -139,6 +141,8 @@ section
       .card-hor,
       .card-vert
         width: 80%
+        p.small.photo-credit
+          font-size: 9px
       .card-vert
         .caption
           padding: 20px 40px
