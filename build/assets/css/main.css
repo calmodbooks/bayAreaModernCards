@@ -185,11 +185,11 @@ th {
 /** _body-element **/
 body {
   margin: auto;
-  background-color: #272727;
+  background-color: #434141;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Hind', sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
@@ -207,7 +207,7 @@ a {
 
 /** _typography.scss **/
 h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 300; }
 
 .gigantic, .huge, .large, .bigger, .big,
@@ -267,7 +267,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-family: 'Josefin Slab', serif;
   font-size: 14px;
@@ -276,11 +276,11 @@ input[type="button"] {
   letter-spacing: .1rem;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #53375F;
+  background-color: #5B3A6A;
   border-radius: 15px;
   border: 1px solid #bbb;
   cursor: pointer;
-  box-shadow: 1px 2px 3px #a7a7a7; }
+  box-shadow: 1px 2px 3px #c2c1c1; }
   .button:hover, .button:active, .button:focus, .button:touch,
   button:hover,
   button:active,
@@ -333,7 +333,7 @@ ul {
 .nav {
   padding: 20px 50px;
   list-style: none;
-  background-color: rgba(83, 55, 95, 0.64);
+  background-color: rgba(91, 58, 106, 0.64);
   text-align: right; }
   .nav li {
     display: inline;
@@ -342,7 +342,7 @@ ul {
       margin-right: 0; }
     .nav li a {
       padding-bottom: 5px;
-      color: #FFFFFF;
+      color: #ffffff;
       border-bottom: 1px solid transparent; }
       .nav li a:hover {
         color: #60953D;
@@ -369,7 +369,7 @@ section.buyNow {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   overflow: hidden;
   padding-top: 40px; }
   section.buyNow .col-1 {
@@ -381,8 +381,8 @@ section.buyNow {
     section.buyNow .col-1 img {
       max-width: 100%;
       height: auto;
-      -webkit-filter: drop-shadow(4px 5px 6px #272727);
-              filter: drop-shadow(4px 5px 6px #272727); }
+      -webkit-filter: drop-shadow(4px 5px 6px #434141);
+              filter: drop-shadow(4px 5px 6px #434141); }
   section.buyNow .col-2 {
     -ms-flex-positive: 1;
         flex-grow: 1;
@@ -395,7 +395,7 @@ section.buyNow {
     section.buyNow .col-2 .description {
       text-align: left; }
       section.buyNow .col-2 .description #text {
-        color: #272727;
+        color: #434141;
         font-size: 1.3em; }
     section.buyNow .col-2 button {
       display: block;
@@ -441,7 +441,7 @@ section.buyNow {
       padding: 0 20px; } }
 
 section.quote {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 0;
   margin: 0; }
   section.quote .quote-bg {
@@ -460,7 +460,7 @@ section.quote {
     margin: 0;
     padding: 0; }
   section.quote .quote-box {
-    background-color: rgba(39, 39, 39, 0.7);
+    background-color: rgba(67, 65, 65, 0.7);
     text-align: center;
     padding: 30px 50px;
     font-weight: 600;
@@ -533,7 +533,7 @@ section {
       padding: 20px 55px; }
     section .cards-wrap .caption {
       position: absolute;
-      background-color: rgba(39, 39, 39, 0.9);
+      background-color: rgba(67, 65, 65, 0.9);
       height: 100%;
       padding: 20px 10px;
       text-align: left;
@@ -641,8 +641,8 @@ section {
     padding: 10px 30px; } }
 
 section.stores {
-  background-color: #FFFFFF;
-  color: #272727;
+  background-color: #ffffff;
+  color: #434141;
   text-align: left;
   overflow: hidden; }
   section.stores .box {
@@ -706,7 +706,7 @@ footer {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  background-color: #53375F; }
+  background-color: #5B3A6A; }
   footer .copyright p {
     margin: 0;
     padding: 10px 0; }
@@ -718,7 +718,7 @@ footer {
       cursor: pointer; }
       footer ul li a {
         font-size: 20px;
-        color: #FFFFFF; }
+        color: #ffffff; }
     footer ul li:last-child {
       padding-right: 0px; }
 
