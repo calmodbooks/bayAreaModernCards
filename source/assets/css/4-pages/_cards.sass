@@ -18,15 +18,38 @@ section
       text-align: center
       width: 33%
       max-height: 50%
-      // margin: 10px
       position: relative
       overflow: hidden
-      &:hover .caption
-        opacity: 1
-        transform: translate(0%, 0%) scale(1.0)
+      // &:hover .caption,
+      // &:focus .caption
+      //   opacity: 1
+      //   transform: translate(0%, 0%) scale(1.0)
       p.small.photo-credit
         padding: 10px
         margin: 0
+      .caption
+        position: absolute
+        background-color: rgba($bg, .9)
+        height: 100%
+        padding: 20px 10px
+        text-align: left
+        vertical-align: middle
+        overflow: hidden
+        right: -500px
+        opacity: 0
+        // transform: translate(100%, 0%) scale(0.5)
+        // transition: all 200ms ease-in-out
+        // opacity: 1
+        // right: 0
+        span
+          font-weight: bold
+    // .caption.show
+    //   opacity: 1
+    //   transform: translate(0%, 0%) scale(1.0)
+    // .caption.hide
+    //   opacity: 0
+    //   transform: translate(100%, 0%) scale(0.5)
+    
     .card-hor 
       img
         width: 100%
@@ -36,25 +59,6 @@ section
         width: 80%
       .caption
         padding: 20px 55px
-
-    .caption
-      position: absolute
-      background-color: rgba($bg, .9)
-      height: 100%
-      padding: 20px 10px
-      text-align: left
-      vertical-align: middle
-      overflow: hidden
-      transform: translate(100%, 0%) scale(0.5)
-      transition: all 200ms ease-in-out
-      opacity: 0
-      span
-        font-weight: bold
-    .caption.show
-      opacity: 1
-      transform: translate(0%, 0%) scale(1.0)
-
-
 
 
 @media(max-width:1142px)
@@ -89,15 +93,8 @@ section
       padding-bottom: 40px
     .cards-wrap
       max-height: 600px
-// @media(max-width:755px)
-//   section .cards-wrap
-//     .caption
-//       font-size: 10px
-
-// @media(max-width:667px)
-//   section .cards-wrap
-//     margin: 40px
-//     max-height: 400px
+      .card-hor .caption p
+        margin-top: -15px
 
 @media(max-width:755px)
   section 
@@ -120,6 +117,8 @@ section
       .card-vert
         .caption
           padding: 20px 70px
+      .card-hor .caption p
+        margin-top: 0
       #card1
         order: 1
       #card3
