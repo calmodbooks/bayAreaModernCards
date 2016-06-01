@@ -311,7 +311,7 @@ input[type="button"] {
   width: 100%;
   min-height: 768px;
   padding-top: 40px;
-  background-image: url("/assets/img/header.jpg");
+  background-image: url("http://calmodbooks.github.io/bayAreaModernCards/assets/img/header.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -482,7 +482,7 @@ section.quote {
     -ms-flex-direction: column;
         flex-direction: column;
     width: 100%;
-    background-image: url("/assets/img/quoteBg.png");
+    background-image: url("http://calmodbooks.github.io/bayAreaModernCards/assets/img/quoteBg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
