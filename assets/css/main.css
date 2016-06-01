@@ -551,7 +551,7 @@ section {
     -ms-flex-pack: justify;
         justify-content: space-between;
     margin: 50px;
-    max-height: 900px;
+    max-height: 950px;
     overflow: hidden; }
     section .cards-wrap .card-hor,
     section .cards-wrap .card-vert {
