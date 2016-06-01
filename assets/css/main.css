@@ -560,39 +560,30 @@ section {
       max-height: 50%;
       position: relative;
       overflow: hidden; }
-      section .cards-wrap .card-hor:hover .caption,
-      section .cards-wrap .card-vert:hover .caption {
-        opacity: 1;
-        -webkit-transform: translate(0%, 0%) scale(1);
-                transform: translate(0%, 0%) scale(1); }
       section .cards-wrap .card-hor p.small.photo-credit,
       section .cards-wrap .card-vert p.small.photo-credit {
         padding: 10px;
         margin: 0; }
+      section .cards-wrap .card-hor .caption,
+      section .cards-wrap .card-vert .caption {
+        position: absolute;
+        background-color: rgba(67, 65, 65, 0.9);
+        height: 100%;
+        padding: 20px 10px;
+        text-align: left;
+        vertical-align: middle;
+        overflow: hidden;
+        right: -500px;
+        opacity: 0; }
+        section .cards-wrap .card-hor .caption span,
+        section .cards-wrap .card-vert .caption span {
+          font-weight: bold; }
     section .cards-wrap .card-hor img {
       width: 100%; }
     section .cards-wrap .card-vert img {
       width: 80%; }
     section .cards-wrap .card-vert .caption {
       padding: 20px 55px; }
-    section .cards-wrap .caption {
-      position: absolute;
-      background-color: rgba(67, 65, 65, 0.9);
-      height: 100%;
-      padding: 20px 10px;
-      text-align: left;
-      vertical-align: middle;
-      overflow: hidden;
-      -webkit-transform: translate(100%, 0%) scale(0.5);
-              transform: translate(100%, 0%) scale(0.5);
-      transition: all 200ms ease-in-out;
-      opacity: 0; }
-      section .cards-wrap .caption span {
-        font-weight: bold; }
-    section .cards-wrap .caption.show {
-      opacity: 1;
-      -webkit-transform: translate(0%, 0%) scale(1);
-              transform: translate(0%, 0%) scale(1); }
 
 @media (max-width: 1142px) {
   section .cards-wrap {
@@ -621,7 +612,9 @@ section {
   section h2 {
     padding-bottom: 40px; }
   section .cards-wrap {
-    max-height: 600px; } }
+    max-height: 600px; }
+    section .cards-wrap .card-hor .caption p {
+      margin-top: -15px; } }
 
 @media (max-width: 755px) {
   section h2 {
@@ -644,6 +637,8 @@ section {
       font-size: 14px; }
     section .cards-wrap .card-vert .caption {
       padding: 20px 70px; }
+    section .cards-wrap .card-hor .caption p {
+      margin-top: 0; }
     section .cards-wrap #card1 {
       -ms-flex-order: 1;
           order: 1; }
