@@ -20,6 +20,15 @@ if(windowW > 755){
       right: 0,
       opacity: 1
     }, 'fast');
+
+    //if the sample overlay on the active caption is still visible makes it disappear
+    if($('#active').hasClass('visible')){
+      $('#active').animate({
+        right: -500,
+        opacity: 0
+      }, 'fast');
+      $('#active').removeClass('visible');
+    }
   });
 
   $('.caption').on('mouseleave', function(){
@@ -33,7 +42,16 @@ if(windowW > 755){
 
 }else{
   $('.card-vert, .card-hor').on('tap', function(){
+    console.log('tap card fired');
     var $caption = $(this).find('.caption');
+
+    //remove the sample class to prevent it from interfering with the animation
+    $('#active').removeClass('sample');
+    //makes the overlay on active disappear
+    $('#active').animate({
+      right: -500,
+      opacity: 0
+    },'fast');
 
     if($caption.hasClass('visible')){
       $caption.animate({
@@ -53,7 +71,7 @@ if(windowW > 755){
 
 function captionPop(){
   var wScroll = $(window).scrollTop();
-  if($('section.exploreDeck').offset().top - $(window).height()/3 < wScroll){
+  if($('section.exploreDeck').offset().top - $(window).height()/3 < wScroll && $('#active').hasClass('sample')){
     $('#active').animate({
       right: 0,
       opacity: 1
