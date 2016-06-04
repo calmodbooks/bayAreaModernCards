@@ -92,6 +92,16 @@ gulp.task('jade', function(){
  * Watch html/md files & reload BrowserSync
 
  */
+ /**
+ * Add CNAME to built folder
+ **/
+
+ gulp.task('copyCNAME', function(){
+  gulp.src('source/CNAME')
+  .pipe(gulp.dest('./build'));
+});
+
+
  gulp.task('watch', function () {
      gulp.watch('source/assets/css/**', ['sass']);
      gulp.watch('source/jadeFiles/**/*.jade', ['jade']);
