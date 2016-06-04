@@ -26,12 +26,21 @@ section.buyNow
       #text
         color: $bg
         font-size: 1.3em
-    button
+    .btn
       display: block
       margin: 40px auto 0px auto
       font-size: 18px
       &:hover
         background-color: $accent2
+    p.small
+      color: $bg
+      text-align: center
+      padding-top: 10px
+      a
+        color: $bg
+        text-decoration: underline
+        &:hover
+          color: $accent2
 
 @media(max-width:800px)
   section.buyNow
@@ -53,10 +62,12 @@ section.buyNow
         #text
           font-size: 1em
           order: 2
-        button
+        .btn
           order: 1
-          margin: 0px auto 40px auto
+          margin: 0px auto
           font-size: 1
+        p.small
+          margin-bottom: 40px
 
 @media(max-width:500px)
   section.buyNow
