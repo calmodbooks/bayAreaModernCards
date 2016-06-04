@@ -201,7 +201,8 @@ body {
 /** links.sass **/
 a {
   text-decoration: none;
-  outline: 0; }
+  outline: 0;
+  color: #ffffff; }
   a:hover, a:focus {
     color: #60953D; }
 
@@ -418,12 +419,21 @@ section.buyNow {
       section.buyNow .col-2 .description #text {
         color: #434141;
         font-size: 1.3em; }
-    section.buyNow .col-2 button {
+    section.buyNow .col-2 .btn {
       display: block;
       margin: 40px auto 0px auto;
       font-size: 18px; }
-      section.buyNow .col-2 button:hover {
+      section.buyNow .col-2 .btn:hover {
         background-color: #60953D; }
+    section.buyNow .col-2 p.small {
+      color: #434141;
+      text-align: center;
+      padding-top: 10px; }
+      section.buyNow .col-2 p.small a {
+        color: #434141;
+        text-decoration: underline; }
+        section.buyNow .col-2 p.small a:hover {
+          color: #60953D; }
 
 @media (max-width: 800px) {
   section.buyNow .col-2 .description {
@@ -447,11 +457,13 @@ section.buyNow {
           font-size: 1em;
           -ms-flex-order: 2;
               order: 2; }
-        section.buyNow .col-2 .description button {
+        section.buyNow .col-2 .description .btn {
           -ms-flex-order: 1;
               order: 1;
-          margin: 0px auto 40px auto;
-          font-size: 1; } }
+          margin: 0px auto;
+          font-size: 1; }
+        section.buyNow .col-2 .description p.small {
+          margin-bottom: 40px; } }
 
 @media (max-width: 500px) {
   section.buyNow {
@@ -702,6 +714,12 @@ section.stores {
         margin: 0px; }
       section.stores .box .col-1 span {
         font-weight: bold; }
+    section.stores .box .footnote span {
+      font-weight: 400; }
+      section.stores .box .footnote span a {
+        color: #434141; }
+        section.stores .box .footnote span a:hover {
+          color: #60953D; }
     section.stores .box .col-2 {
       -ms-flex-positive: 2;
           flex-grow: 2;
