@@ -311,6 +311,7 @@ input[type="button"] {
       justify-content: space-between;
   width: 100%;
   min-height: 768px;
+  height: 1px;
   padding-top: 40px;
   background-image: url("http://calmodbooks.github.io/bayAreaModernCards/assets/img/header.JPG");
   background-repeat: no-repeat;
@@ -554,15 +555,20 @@ section {
   section .cards-wrap {
     display: -ms-flexbox;
     display: flex;
+    display: -moz-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
     -ms-flex-direction: column;
         flex-direction: column;
+    -moz-flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    -moz-justify-content: space-beteween;
     margin: 50px;
+    height: 950px;
     max-height: 950px;
     overflow: hidden; }
     section .cards-wrap .card-hor,
@@ -574,7 +580,7 @@ section {
       overflow: hidden; }
       section .cards-wrap .card-hor p.small.photo-credit,
       section .cards-wrap .card-vert p.small.photo-credit {
-        padding: 10px;
+        padding: 5px 15px;
         margin: 0; }
       section .cards-wrap .card-hor .caption,
       section .cards-wrap .card-vert .caption {
@@ -609,6 +615,7 @@ section {
 
 @media (max-width: 903px) {
   section .cards-wrap {
+    height: 650px;
     max-height: 650px; }
     section .cards-wrap .card-vert .caption {
       padding: 10px 30px; }
@@ -624,6 +631,7 @@ section {
   section h2 {
     padding-bottom: 40px; }
   section .cards-wrap {
+    height: 600px;
     max-height: 600px; }
     section .cards-wrap .card-hor .caption p {
       margin-top: -15px; } }
@@ -639,6 +647,7 @@ section {
         justify-content: space-around;
     margin: 20px;
     overflow: scroll;
+    height: 400px;
     max-height: 400px;
     text-align: center; }
     section .cards-wrap .card-hor,
@@ -735,6 +744,7 @@ section.stores {
             flex-direction: column;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+        height: 400px;
         max-height: 400px;
         -ms-flex-pack: center;
             justify-content: center;
