@@ -50,7 +50,7 @@ gulp.task('jade', function(){
              includePaths: ['css'],
              onError: browserSync.notify
          }))
-         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7', 'Firefox >=20'], { cascade: true }))
          .pipe(gulp.dest('./build/assets/css'))
          //.pipe(browserSync.reload({stream:true}));
  });
@@ -93,7 +93,7 @@ gulp.task('jade', function(){
 
  */
  /**
- * Add CNAME to built folder
+ * Add CNAME to built folder -- does not run on default
  **/
 
  gulp.task('copyCNAME', function(){
