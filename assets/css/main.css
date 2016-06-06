@@ -744,7 +744,7 @@ section.stores {
             flex-direction: column;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        height: 400px;
+        height: 320px;
         max-height: 400px;
         -ms-flex-pack: center;
             justify-content: center;
