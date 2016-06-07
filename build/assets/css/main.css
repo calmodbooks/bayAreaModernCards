@@ -575,7 +575,6 @@ section {
     section .cards-wrap .card-vert {
       text-align: center;
       width: 33%;
-      max-height: 50%;
       position: relative;
       overflow: hidden; }
       section .cards-wrap .card-hor p.small.photo-credit,
