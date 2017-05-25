@@ -204,7 +204,7 @@ a {
   outline: 0;
   color: #ffffff; }
   a:hover, a:focus {
-    color: #60953D; }
+    color: #F6953E; }
 
 /** _typography.scss **/
 h1 {
@@ -213,7 +213,7 @@ h1 {
 
 .gigantic, .huge, .large, .bigger, .big,
 h2, h3, h4, h5, h6 {
-  color: #60953D;
+  color: #F6953E;
   font-weight: 300;
   font-family: 'Josefine Slab', serif; }
 
@@ -277,7 +277,7 @@ input[type="button"] {
   letter-spacing: .1rem;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #5B3A6A;
+  background-color: #7BC9DD;
   border-radius: 15px;
   border: 1px solid #bbb;
   cursor: pointer;
@@ -299,7 +299,7 @@ input[type="button"] {
   input[type="button"]:active,
   input[type="button"]:focus,
   input[type="button"]:touch {
-    color: #60953D;
+    color: #F6953E;
     outline: 0; }
 
 .header {
@@ -313,7 +313,7 @@ input[type="button"] {
   min-height: 768px;
   height: 1px;
   padding-top: 40px;
-  background-image: url("http://calmodbooks.github.io/bayAreaModernCards/assets/img/header.JPG");
+  background-image: url("/assets/img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -346,7 +346,7 @@ ul {
 .nav {
   padding: 20px 50px;
   list-style: none;
-  background-color: rgba(91, 58, 106, 0.64);
+  background-color: #7BC9DD;
   text-align: right; }
   .nav li {
     display: inline;
@@ -358,9 +358,9 @@ ul {
       color: #ffffff;
       border-bottom: 1px solid transparent; }
       .nav li a:hover {
-        color: #60953D;
+        color: #F6953E;
         line-height: 28px;
-        border-bottom: 1px solid #60953D;
+        border-bottom: 1px solid #F6953E;
         cursor: pointer; }
 
 @media (max-width: 700px) {
@@ -395,6 +395,7 @@ section.buyNow {
   background-color: #ffffff;
   overflow: hidden;
   padding-top: 40px;
+  padding-bottom: 3em;
   color: #434141; }
   section.buyNow .col-1 {
     -ms-flex-positive: 1;
@@ -404,9 +405,7 @@ section.buyNow {
     max-width: 50%; }
     section.buyNow .col-1 img {
       max-width: 100%;
-      height: auto;
-      -webkit-filter: drop-shadow(4px 5px 6px #434141);
-              filter: drop-shadow(4px 5px 6px #434141); }
+      height: auto; }
     section.buyNow .col-1 .credit.small {
       margin: 0;
       padding: 0; }
@@ -418,17 +417,25 @@ section.buyNow {
     -ms-flex-align: center;
         align-items: center;
     padding: 20px 50px 0 50px;
-    text-align: center; }
+    text-align: center;
+    max-width: 50%; }
     section.buyNow .col-2 .description {
       text-align: left; }
       section.buyNow .col-2 .description #text {
         font-size: 1.3em; }
+      section.buyNow .col-2 .description h3 {
+        color: #000000;
+        font-weight: bold; }
+    section.buyNow .col-2 .buttons {
+      text-align: center; }
     section.buyNow .col-2 .btn {
-      display: block;
-      margin: 40px auto 0px auto;
-      font-size: 18px; }
+      display: inline-block;
+      margin: 40px 20px 0px 20px;
+      font-size: 18px;
+      width: 170px;
+      text-align: center; }
       section.buyNow .col-2 .btn:hover {
-        background-color: #60953D; }
+        background-color: #F6953E; }
     section.buyNow .col-2 p.small {
       text-align: center;
       padding-top: 10px; }
@@ -436,13 +443,9 @@ section.buyNow {
         color: #434141;
         text-decoration: underline; }
         section.buyNow .col-2 p.small a:hover {
-          color: #60953D; }
+          color: #F6953E; }
 
-@media (max-width: 800px) {
-  section.buyNow .col-2 .description {
-    font-size: 1em; } }
-
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   section.buyNow {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -452,20 +455,22 @@ section.buyNow {
       section.buyNow .col-1 .credit.small {
         padding-bottom: 30px; }
     section.buyNow .col-2 {
-      padding: 0 50px; }
+      padding: 0 50px;
+      max-width: 100%; }
       section.buyNow .col-2 .description {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
             flex-direction: column; }
+        section.buyNow .col-2 .description h3 {
+          text-align: center; }
         section.buyNow .col-2 .description #text {
-          font-size: 1em;
           -ms-flex-order: 2;
-              order: 2; }
+              order: 2;
+          font-size: 1.2em; }
         section.buyNow .col-2 .description .btn {
           -ms-flex-order: 1;
               order: 1;
-          margin: 0px auto;
           font-size: 1; }
         section.buyNow .col-2 .description p.small {
           margin-bottom: 40px; } }
@@ -483,7 +488,7 @@ section.quote {
   padding: 0;
   margin: 0;
   position: relative; }
-  section.quote p.small.photo-credit {
+  section.quote p.photo-credit {
     position: absolute;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -494,12 +499,12 @@ section.quote {
   section.quote .quote-bg {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
     -ms-flex-direction: column;
         flex-direction: column;
     width: 100%;
-    background-image: url("http://calmodbooks.github.io/bayAreaModernCards/assets/img/quoteBg.png");
+    background-image: url("/assets/img/proofs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -740,7 +745,7 @@ section.stores {
         color: #434141;
         text-decoration: underline; }
         section.stores .box .footnote span a:hover {
-          color: #60953D; }
+          color: #F6953E; }
     section.stores .box .col-2 {
       -ms-flex-line-pack: center;
           align-content: center;
@@ -814,7 +819,7 @@ footer {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  background-color: #5B3A6A; }
+  background-color: #7BC9DD; }
   footer .copyright p {
     margin: 0;
     padding: 10px 0; }
@@ -825,7 +830,7 @@ footer {
       padding: 0 10px;
       cursor: pointer; }
       footer ul li a {
-        font-size: 20px;
+        font-size: 25px;
         color: #ffffff; }
     footer ul li:last-child {
       padding-right: 0px; }

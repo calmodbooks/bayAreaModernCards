@@ -1,0 +1,108 @@
+section.stores
+  background-color: $text
+  color: $bg
+  text-align: left
+  overflow: hidden
+  .box
+    display: flex
+    justify-content: center
+    padding: 10px
+    .col-1
+      // flex-grow: 1
+      text-align: center
+      h2 
+        padding: 40px 5px
+        margin: 0px
+      .store-list
+        display: flex
+        justify-content: center
+        text-align: left
+        margin-bottom: 20px
+        .left
+          margin: 15px
+        .right
+          margin: 15px
+      span
+        font-weight: bold
+
+    .footnote span
+      font-weight: 400
+      a
+        color: $bg
+        text-decoration: underline
+        &:hover
+          color: $accent2
+    .col-2
+      // flex-grow: 2
+      // display: flex
+      // flex-direction: column
+      // flex-wrap: wrap
+      align-content: center
+      max-height: 500px
+      margin: 0px
+      padding: 62px 20px 20px 20px
+      // .thumb-box
+        // max-width: 200px
+        // padding: 10px
+      .thumbs-wrap
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        height: 320px
+        max-height: 400px
+        justify-content: center
+        align-items: center
+        max-width: 350px
+        margin: auto
+        img
+          max-width: 180px
+          padding: 10px
+      p.small.photo-credit
+        margin: 0 auto
+        padding: 0 30px 0 35px
+        dislpay: block
+        max-width: 400px
+        color: $bg
+        
+
+@media(max-width:855px)
+  section.stores
+    .box
+      .col-2
+        padding: 92px 20px 20px 20px
+
+@media(max-width:700px)
+  section.stores
+    .box
+      flex-direction: column
+      .col-1
+        h2
+          padding: 20px
+        p
+          margin: 15px
+        .store-list
+          margin: auto
+        .footnote
+          margin: 0
+
+      .col-2
+        padding: 10px 20px
+
+@media(max-width:460px)
+  section.stores
+    .box
+      .col-2
+
+        .thumbs-wrap
+          max-height: 200px
+          max-width: 300px
+          text-align: center
+          img
+            max-width: 120px
+            padding: 5px
+        p.small.photo-credit
+          padding: 5px 0 10px 5px
+          max-width: 300px
+          font-size: 9px
+
+

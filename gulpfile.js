@@ -45,7 +45,7 @@ gulp.task('jade', function(){
  * Compile files from sass into build
  */
  gulp.task('sass', function () {
-     return gulp.src('source/assets/css/main.sass')
+     return gulp.src('source/assets/css/*.sass')
          .pipe(sass({
              includePaths: ['css'],
              onError: browserSync.notify
@@ -54,6 +54,8 @@ gulp.task('jade', function(){
          .pipe(gulp.dest('./build/assets/css'))
          //.pipe(browserSync.reload({stream:true}));
  });
+
+
 
  /**
  * adds javascript to build 
@@ -72,6 +74,12 @@ gulp.task('jade', function(){
  gulp.task('img', function(){
    return gulp.src('source/assets/img/**/*')
    .pipe(gulp.dest('./build/assets/img'));
+   //.pipe(browserSync.reload({stream:true}));;
+ });
+
+  gulp.task('cards_img', function(){
+   return gulp.src('source/assets/cards_img/**/*')
+   .pipe(gulp.dest('./build/assets/cards_img'));
    //.pipe(browserSync.reload({stream:true}));;
  });
 
@@ -112,6 +120,8 @@ gulp.task('jade', function(){
      gulp.watch('build/assets/js/*.js').on('change', browserSync.reload);
      gulp.watch('build/assets/css/*.css').on('change', browserSync.reload);
      gulp.watch('build/assets/img/**').on('change', browserSync.reload);
+     gulp.watch('build/assets/cards_img/**').on('change', browserSync.reload);
+
  });
 
  /**
@@ -119,7 +129,7 @@ gulp.task('jade', function(){
 **/
 
 gulp.task('build', function () {
-  runSequence('clean',['sass','jade','javascript','img'],'browser-sync','watch');
+  runSequence('clean',['sass','jade','javascript','img','cards_img'],'browser-sync','watch');
   });
 
 /**
