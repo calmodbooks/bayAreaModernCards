@@ -264,7 +264,8 @@ hr {
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
+input[type="button"],
+a.btn {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
@@ -298,7 +299,11 @@ input[type="button"] {
   input[type="button"]:hover,
   input[type="button"]:active,
   input[type="button"]:focus,
-  input[type="button"]:touch {
+  input[type="button"]:touch,
+  a.btn:hover,
+  a.btn:active,
+  a.btn:focus,
+  a.btn:touch {
     color: #F6953E;
     outline: 0; }
 
@@ -423,19 +428,25 @@ section.buyNow {
       text-align: left; }
       section.buyNow .col-2 .description #text {
         font-size: 1.3em; }
+        section.buyNow .col-2 .description #text p a {
+          color: #434141;
+          text-decoration: underline; }
+          section.buyNow .col-2 .description #text p a:hover {
+            color: #F6953E; }
       section.buyNow .col-2 .description h3 {
         color: #000000;
         font-weight: bold; }
     section.buyNow .col-2 .buttons {
       text-align: center; }
-    section.buyNow .col-2 .btn {
-      display: inline-block;
-      margin: 40px 20px 0px 20px;
-      font-size: 18px;
-      width: 170px;
-      text-align: center; }
-      section.buyNow .col-2 .btn:hover {
-        background-color: #F6953E; }
+      section.buyNow .col-2 .buttons a.btn {
+        display: inline-block;
+        margin: 40px 20px 0px 20px;
+        font-size: 18px;
+        width: 170px;
+        text-align: center;
+        color: #ffffff; }
+        section.buyNow .col-2 .buttons a.btn:hover {
+          background-color: #F6953E; }
     section.buyNow .col-2 p.small {
       text-align: center;
       padding-top: 10px; }
@@ -504,7 +515,7 @@ section.quote {
     -ms-flex-direction: column;
         flex-direction: column;
     width: 100%;
-    background-image: url("http://calmodbooks.github.io/bayAreaModernCards/assets/img/quoteBg.png");
+    background-image: url("http://calmodbooks.github.io/bayAreaModernCards/assets/img/proofs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -835,7 +846,7 @@ footer {
     footer ul li:last-child {
       padding-right: 0px; }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   footer {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
