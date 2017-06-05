@@ -30,19 +30,26 @@ section.buyNow
       text-align: left
       #text
         font-size: 1.3em
+        p
+          a
+            color: $bg
+            text-decoration: underline
+            &:hover
+              color: $accent2
       h3
         color: #000000
         font-weight: bold
     .buttons
       text-align: center
-    .btn
-      display: inline-block
-      margin: 40px 20px 0px 20px
-      font-size: 18px
-      width: 170px
-      text-align: center
-      &:hover
-        background-color: $accent2
+      a.btn
+        display: inline-block
+        margin: 40px 20px 0px 20px
+        font-size: 18px
+        width: 170px
+        text-align: center
+        color: $text
+        &:hover
+          background-color: $accent2
     p.small
       text-align: center
       padding-top: 10px

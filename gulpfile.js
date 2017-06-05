@@ -109,6 +109,11 @@ gulp.task('jade', function(){
   .pipe(gulp.dest('./build'));
 });
 
+  gulp.task('copyPDF', function(){
+  gulp.src('source/*.pdf')
+  .pipe(gulp.dest('./build'));
+});
+
 
  gulp.task('watch', function () {
      gulp.watch('source/assets/css/**', ['sass']);
@@ -129,7 +134,7 @@ gulp.task('jade', function(){
 **/
 
 gulp.task('build', function () {
-  runSequence('clean',['sass','jade','javascript','img','cards_img'],'browser-sync','watch');
+  runSequence('clean',['sass','jade','javascript','img','cards_img','copyCNAME','copyPDF'],'browser-sync','watch');
   });
 
 /**
