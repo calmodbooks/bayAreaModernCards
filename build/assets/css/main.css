@@ -414,6 +414,9 @@ section.buyNow {
     section.buyNow .col-1 .credit.small {
       margin: 0;
       padding: 0; }
+    section.buyNow .col-1 p a {
+      color: #434141;
+      text-decoration: underline; }
   section.buyNow .col-2 {
     -ms-flex-positive: 1;
         flex-grow: 1;
@@ -430,7 +433,8 @@ section.buyNow {
         font-size: 1.3em; }
         section.buyNow .col-2 .description #text p a {
           color: #434141;
-          text-decoration: underline; }
+          text-decoration: underline;
+          text-transform: uppercase; }
           section.buyNow .col-2 .description #text p a:hover {
             color: #F6953E; }
       section.buyNow .col-2 .description h3 {
