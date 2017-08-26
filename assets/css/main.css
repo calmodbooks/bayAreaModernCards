@@ -240,7 +240,7 @@ h2, h3, h4, h5, h6 {
   line-height: 1.38; }
 
 .small, small {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.2; }
 
 p {
@@ -272,7 +272,7 @@ a.btn {
   color: #ffffff;
   text-align: center;
   font-family: 'Josefin Slab', serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -442,6 +442,8 @@ section.buyNow {
         font-weight: bold; }
     section.buyNow .col-2 .buttons {
       text-align: center; }
+      section.buyNow .col-2 .buttons form {
+        display: inline-block; }
       section.buyNow .col-2 .buttons a.btn {
         display: inline-block;
         margin: 40px 20px 0px 20px;
@@ -453,7 +455,7 @@ section.buyNow {
           background-color: #F6953E; }
     section.buyNow .col-2 p.small {
       text-align: center;
-      padding-top: 10px; }
+      padding-top: 13px; }
       section.buyNow .col-2 p.small a {
         color: #434141;
         text-decoration: underline; }
