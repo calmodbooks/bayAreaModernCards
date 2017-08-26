@@ -443,7 +443,7 @@ section.buyNow {
     section.buyNow .col-2 .buttons {
       text-align: center; }
       section.buyNow .col-2 .buttons form {
-        display: inline-block; }
+        display: inline-block !important; }
       section.buyNow .col-2 .buttons a.btn {
         display: inline-block;
         margin: 40px 20px 0px 20px;
