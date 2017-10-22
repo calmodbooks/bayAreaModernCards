@@ -574,158 +574,109 @@ section.quote {
     section.quote .quote-bg .quote-box {
       padding: 10px; } }
 
-section {
-  text-align: center; }
-  section h2 {
-    padding-bottom: 50px; }
-  section .cards-wrap {
+section.press {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #434141;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 3em;
+  color: #ffffff; }
+  section.press .col-1 {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    text-align: center;
+    padding: 0 50px;
+    max-width: 50%; }
+    section.press .col-1 img {
+      max-width: 100%;
+      height: auto; }
+    section.press .col-1 .credit.small {
+      margin: 0;
+      padding: 0; }
+    section.press .col-1 p a {
+      color: #434141;
+      text-decoration: underline; }
+  section.press .col-2 {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
     display: -ms-flexbox;
     display: flex;
-    display: -moz-flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -moz-flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -moz-justify-content: space-beteween;
-    margin: 50px;
-    height: 950px;
-    max-height: 950px;
-    overflow: visible; }
-    section .cards-wrap .card-hor,
-    section .cards-wrap .card-vert {
+    padding: 20px 50px 0 50px;
+    text-align: center;
+    max-width: 50%; }
+    section.press .col-2 .description {
+      text-align: left; }
+      section.press .col-2 .description #text {
+        font-size: 1.3em; }
+        section.press .col-2 .description #text p a:hover {
+          color: #F6953E;
+          text-decoration: underline; }
+      section.press .col-2 .description h3 {
+        color: #F6953E;
+        font-weight: bold; }
+    section.press .col-2 .buttons {
+      text-align: center; }
+      section.press .col-2 .buttons form {
+        display: inline-block !important; }
+      section.press .col-2 .buttons a.btn {
+        display: inline-block;
+        margin: 40px 20px 0px 20px;
+        font-size: 18px;
+        width: 170px;
+        text-align: center;
+        color: #434141;
+        border: 1px solid #434141; }
+    section.press .col-2 p.small {
       text-align: center;
-      width: 33%;
-      position: relative;
-      overflow: hidden; }
-      section .cards-wrap .card-hor p.small.photo-credit,
-      section .cards-wrap .card-vert p.small.photo-credit {
-        padding: 5px 15px;
-        margin: 0; }
-      section .cards-wrap .card-hor .caption,
-      section .cards-wrap .card-vert .caption {
-        position: absolute;
-        background-color: rgba(67, 65, 65, 0.9);
-        height: 100%;
-        padding: 20px 10px;
-        text-align: left;
-        vertical-align: middle;
-        overflow: hidden;
-        right: -500px;
-        opacity: 0; }
-        section .cards-wrap .card-hor .caption span,
-        section .cards-wrap .card-vert .caption span {
-          font-weight: bold; }
-    section .cards-wrap .card-hor img {
-      width: 100%; }
-    section .cards-wrap .card-vert img {
-      width: 80%; }
-    section .cards-wrap .card-vert .caption {
-      padding: 20px 55px; }
+      padding-top: 13px; }
+      section.press .col-2 p.small a {
+        color: #434141;
+        text-decoration: underline; }
+        section.press .col-2 p.small a:hover {
+          color: #F6953E; }
 
-@media (max-width: 1142px) {
-  section .cards-wrap {
-    max-height: 750px; } }
-
-@media (max-width: 980px) {
-  section .cards-wrap .card-vert .caption {
-    padding: 20px 40px; }
-  section .cards-wrap .caption {
-    font-size: 13px; } }
-
-@media (max-width: 903px) {
-  section .cards-wrap {
-    height: 650px;
-    max-height: 650px; }
-    section .cards-wrap .card-vert .caption {
-      padding: 10px 30px; }
-    section .cards-wrap .caption {
-      font-size: 12px;
-      padding: 10px; } }
-
-@media (max-width: 844px) {
-  section .cards-wrap .caption {
-    font-size: 11px; } }
-
-@media (max-width: 785px) {
-  section h2 {
-    padding-bottom: 40px; }
-  section .cards-wrap {
-    height: 600px;
-    max-height: 600px; }
-    section .cards-wrap .card-hor .caption p {
-      margin-top: -15px; } }
-
-@media (max-width: 755px) {
-  section h2 {
-    padding-bottom: 10px;
-    font-size: 2.5em; }
-  section .cards-wrap {
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: 20px;
-    overflow: scroll;
-    height: auto;
+@media (max-width: 900px) {
+  section.buyNow {
+    -ms-flex-direction: column;
+        flex-direction: column;
     text-align: center; }
-    section .cards-wrap .card-hor,
-    section .cards-wrap .card-vert {
-      width: 70%;
-      margin: 10px; }
-    section .cards-wrap .caption {
-      font-size: 14px; }
-    section .cards-wrap .card-vert .caption {
-      padding: 20px 70px; }
-    section .cards-wrap .card-hor .caption p {
-      margin-top: 0; }
-    section .cards-wrap #card1 {
-      -ms-flex-order: 1;
-          order: 1; }
-    section .cards-wrap #card3 {
-      -ms-flex-order: 2;
-          order: 2; }
-    section .cards-wrap #card5 {
-      -ms-flex-order: 3;
-          order: 3; }
-    section .cards-wrap #card2 {
-      -ms-flex-order: 4;
-          order: 4; }
-    section .cards-wrap #card4 {
-      -ms-flex-order: 5;
-          order: 5; }
-    section .cards-wrap #card6 {
-      -ms-flex-order: 66;
-          order: 66; }
-    section .cards-wrap .caption {
-      padding: 30px; } }
+    section.buyNow .col-1 {
+      max-width: 100%; }
+      section.buyNow .col-1 .credit.small {
+        padding-bottom: 30px; }
+    section.buyNow .col-2 {
+      padding: 0 50px;
+      max-width: 100%; }
+      section.buyNow .col-2 .description {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        section.buyNow .col-2 .description h3 {
+          text-align: center; }
+        section.buyNow .col-2 .description #text {
+          -ms-flex-order: 2;
+              order: 2;
+          font-size: 1.2em; }
+        section.buyNow .col-2 .description .btn {
+          -ms-flex-order: 1;
+              order: 1;
+          font-size: 1; }
+        section.buyNow .col-2 .description p.small {
+          margin-bottom: 40px; } }
 
 @media (max-width: 500px) {
-  section .cards-wrap .card-hor,
-  section .cards-wrap .card-vert {
-    width: 80%; }
-    section .cards-wrap .card-hor p.small.photo-credit,
-    section .cards-wrap .card-vert p.small.photo-credit {
-      font-size: 9px; }
-  section .cards-wrap .card-vert .caption {
-    padding: 20px 40px; }
-  section .cards-wrap .caption {
-    font-size: 12px; }
-  section .cards-wrap .card-hor .caption {
-    padding: 10px; } }
-
-@media (max-width: 400px) {
-  section .cards-wrap .caption {
-    font-size: 11px; }
-  section .cards-wrap .card-hor .caption {
-    padding: 5px; }
-  section .cards-wrap .card-vert .caption {
-    padding: 10px 30px; } }
+  section.buyNow {
+    padding-top: 10px; }
+    section.buyNow .col-1 {
+      padding: 0 10px; }
+    section.buyNow .col-2 {
+      padding: 0 20px; } }
 
 section.stores {
   background-color: #ffffff;
@@ -741,6 +692,7 @@ section.stores {
     section.stores .box .col-1 {
       text-align: center; }
       section.stores .box .col-1 h2 {
+        font-weight: bold;
         padding: 40px 5px;
         margin: 0px; }
       section.stores .box .col-1 .store-list {
@@ -749,7 +701,8 @@ section.stores {
         -ms-flex-pack: center;
             justify-content: center;
         text-align: left;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        font-size: 18px; }
         section.stores .box .col-1 .store-list .left {
           margin: 15px; }
         section.stores .box .col-1 .store-list .right {
